@@ -6,12 +6,35 @@ body {
   overflow-x: hidden;
 }
 
+/* Logo */
+.logo {
+  width: 160px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  animation: logoFade 1.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes logoFade {
+  to { opacity: 1; }
+}
+
+/* Slogan */
+.slogan {
+  font-size: 1rem;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-weight: bold;
+  opacity: 0.9;
+}
+
 /* Hero Section */
 .hero {
   background: linear-gradient(135deg, #0099ff, #00c2a8);
   background-size: 300% 300%;
   animation: heroMove 12s ease infinite;
-  padding: 80px 20px;
+  padding: 60px 20px;
   text-align: center;
   color: white;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
@@ -24,15 +47,9 @@ body {
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin: 0;
-  letter-spacing: 3px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  opacity: 0.9;
-  margin-top: 10px;
+  letter-spacing: 2px;
 }
 
 /* Navigation */
@@ -131,4 +148,4 @@ footer {
   margin-top: 15px;
   font-size: 1rem;
   color: #0099ff;
-  }
+}
