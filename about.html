@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About SkyGlobe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="spinner"></div>
+  <p>Loading SkyGlobe...</p>
+</div>
+
+<header>
+  <h1>About SkyGlobe</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="fleet.html">Fleet</a>
+  <a href="destinations.html">Destinations</a>
+</nav>
+
+<main>
+  <section>
+    <h2>Our Story</h2>
+    <p>
+      Founded in 2001, SkyGlobe has grown from a small regional carrier into a modern global airline.
+      Our hub at Singapore Changi Airport allows us to connect the world with comfort and efficiency.
+    </p>
+
+    <h3>Leadership</h3>
+    <ul>
+      <li>Wong Li Mei — Founder & First CEO (2001–2010)</li>
+      <li>Sung Ki Mei — CEO (2010–2020)</li>
+      <li>Gabriel De’gula — Current CEO (2020–2026)</li>
+    </ul>
+
+    <h3>Brand & Livery Team</h3>
+    <ul>
+      <li>Gorge Hull</li>
+      <li>Mike Harry</li>
+      <li>Kimmy West</li>
+      <li>We Tou Lo</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  SkyGlobe Airlines · © 2026
+</footer>
+
+<script>
+window.addEventListener("load", function() {
+  const loader = document.getElementById("loader");
+  loader.style.opacity = "0";
+  setTimeout(() => loader.style.display = "none", 500);
+});
+</script>
+
+</body>
+</html>
