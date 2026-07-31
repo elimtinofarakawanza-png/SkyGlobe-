@@ -1,3 +1,4 @@
+/* GLOBAL */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -6,53 +7,49 @@ body {
   overflow-x: hidden;
 }
 
-/* Logo */
-.logo {
-  width: 160px;
-  height: auto;
+/* OWNER MESSAGE */
+.owner-message {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 15px;
+  border-radius: 10px;
   margin-bottom: 20px;
-  border-radius: 12px;
-  animation: logoFade 1.5s ease forwards;
-  opacity: 0;
-}
-
-@keyframes logoFade {
-  to { opacity: 1; }
-}
-
-/* Slogan */
-.slogan {
-  font-size: 1rem;
-  margin-top: 10px;
-  line-height: 1.5;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #ffffff;
   font-weight: bold;
-  opacity: 0.9;
 }
 
-/* Hero Section */
+/* HERO GRADIENT ANIMATION */
 .hero {
-  background: linear-gradient(135deg, #0099ff, #00c2a8);
+  background: linear-gradient(135deg,
+    #b7e3ff,   /* baby blue */
+    #00c2a8,   /* teal */
+    #9cd6ff    /* light blue */
+  );
   background-size: 300% 300%;
-  animation: heroMove 12s ease infinite;
-  padding: 60px 20px;
+  animation: skyBlend 12s ease infinite;
+  padding: 70px 20px;
   text-align: center;
   color: white;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-@keyframes heroMove {
+@keyframes skyBlend {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-.hero h1 {
-  font-size: 2.8rem;
-  margin: 0;
-  letter-spacing: 2px;
+/* SLOGAN */
+.slogan {
+  font-size: 1rem;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-weight: bold;
+  opacity: 0.95;
 }
 
-/* Navigation */
+/* NAVIGATION */
 nav {
   background: #0f172a;
   padding: 12px;
@@ -76,7 +73,7 @@ nav a:hover {
   text-shadow: 0 0 10px #00c2a8;
 }
 
-/* Section Cards */
+/* SECTIONS */
 .section {
   background: white;
   margin: 40px auto;
@@ -106,7 +103,7 @@ h2 {
   margin-top: 0;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
   background: #0f172a;
   color: #e5e7eb;
@@ -115,7 +112,7 @@ footer {
   margin-top: 40px;
 }
 
-/* Loading Screen */
+/* LOADING SCREEN */
 #loader {
   position: fixed;
   top: 0;
